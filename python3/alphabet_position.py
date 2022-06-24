@@ -14,7 +14,7 @@
 # Solution 1
 import string as st
 def alphabet_position(text):
-    return ' '.join([str(st.ascii_lowercase.index(i)+1) for i in text.lower() if i.isalpha()])
+    return ' '.join([str(st.ascii_lowercase.index(i)+ 1) for i in text.lower() if i.isalpha()])
 
 
 # Solution 2
