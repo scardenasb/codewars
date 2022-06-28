@@ -1,9 +1,9 @@
-# Your task is to sort a given string. Each word in the string will contain a single number. 
+# Your task is to sort a given string. Each word in the string will contain a single number.
 # This number is the position the word should have in the result.
 #
 # Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
 #
-# If the input string is empty, return an empty string. The words in the input String will 
+# If the input string is empty, return an empty string. The words in the input String will
 # only contain valid consecutive numbers.
 #
 # Examples
@@ -15,9 +15,9 @@
 def order(sen):
     j = 1
     lista = []
-    while j<len(sen.split())+1:
+    while j < len(sen.split()) + 1:
         for i in sen.split():
             if str(j) in i:
                 lista.append(i)
-                j+=1
-    return ' '.join(lista)
+                j += 1
+    return " ".join(lista)

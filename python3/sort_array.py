@@ -1,5 +1,5 @@
 # Task
-# You will be given an array of numbers. You have to sort the odd numbers in ascending order while 
+# You will be given an array of numbers. You have to sort the odd numbers in ascending order while
 # leaving the even numbers at their original positions.
 #
 # Examples
@@ -12,9 +12,9 @@ def sort_array(arr):
     narr = []
     c = 0
     for i in arr:
-        if i%2==0:
+        if i % 2 == 0:
             narr.append(i)
         else:
-            narr.append(sorted(filter(lambda x: x%2!=0, arr))[c])
-            c+=1
+            narr.append(sorted(filter(lambda x: x % 2 != 0, arr))[c])
+            c += 1
     return narr

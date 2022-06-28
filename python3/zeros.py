@@ -1,4 +1,4 @@
-# Write a program that will calculate the number of trailing zeros in a 
+# Write a program that will calculate the number of trailing zeros in a
 # factorial of a given number.
 #
 # N! = 1 * 2 * 3 * ... * N
@@ -11,5 +11,5 @@
 def zeros(n):
     c = 0
     for i in range(1, 100):
-        c += n//(5**i)
+        c += n // (5 ** i)
     return c

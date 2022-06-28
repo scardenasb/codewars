@@ -21,6 +21,6 @@
 
 def human_years_cat_years_dog_years(human_y):
     if human_y > 2:
-        return [human_y, 24 + 4*(human_y - 2), 24 + 5*(human_y - 2)]
+        return [human_y, 24 + 4 * (human_y - 2), 24 + 5 * (human_y - 2)]
     else:
-        return [human_y, 6 + human_y*9, 6+human_y*9]
+        return [human_y, 6 + human_y * 9, 6 + human_y * 9]

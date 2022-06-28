@@ -11,9 +11,9 @@
 
 def high(x):
     flag = 0
-    result = ''
-    for k,v in enumerate(x.split()):
-        iter = sum(list(map(lambda j: ord(j)-96, v)))
+    result = ""
+    for k, v in enumerate(x.split()):
+        iter = sum(list(map(lambda j: ord(j) - 96, v)))
         if iter > flag:
             flag = iter
             result = v

@@ -1,4 +1,4 @@
-# You are given an array(list) strarr of strings and an integer k. Your task is to return the first 
+# You are given an array(list) strarr of strings and an integer k. Your task is to return the first
 # longest string consisting of k consecutive strings taken in the array.
 #
 # Examples:
@@ -13,7 +13,7 @@
 # abcdefuvwxyz ("      12)  concatenation of strarr[4] and strarr[5]
 #
 # Two strings are the longest: "folingtrashy" and "abcdefuvwxyz".
-# The first that came is "folingtrashy" so 
+# The first that came is "folingtrashy" so
 # longest_consec(strarr, 2) should return "folingtrashy".
 #
 # In the same way:
@@ -25,4 +25,8 @@
 
 
 def longest_consec(arr, k):
-    return "" if k <= 0 or k > len(arr) else max([''.join(arr[i:i+k]) for i in range(len(arr)-k+1)], key=len)
+    return (
+        ""
+        if k <= 0 or k > len(arr)
+        else max(["".join(arr[i : i + k]) for i in range(len(arr) - k + 1)], key=len)
+    )

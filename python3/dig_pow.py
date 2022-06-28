@@ -25,13 +25,13 @@
 
 def dig_pow(n, p):
     x = [int(i) for i in str(n)]
-    y = list(range(p,p+len(str(n)),1))
-    s=0
+    y = list(range(p, p + len(str(n)), 1))
+    s = 0
 
     for i in range(len(x)):
-        s += x[i]**y[i]
+        s += x[i] ** y[i]
 
-    if  s%n==0:
-        return s/n
+    if s % n == 0:
+        return s / n
     else:
         return -1
