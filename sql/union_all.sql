@@ -19,7 +19,9 @@
 -- transaction_date
 
 
-select 'US' as location, * from ussales where price >= 50.00
+select 'US' as location, id, name, price, card_name, card_number, transaction_date 
+from ussales where price >= 50.00
 union all 
-select 'EU' as location, * from eusales where price >= 50.00
-order by location desc, id
+select 'EU' as location, id, name, price, card_name, card_number, transaction_date
+from eusales where price >= 50.00
+order by location desc
