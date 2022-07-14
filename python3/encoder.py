@@ -14,7 +14,7 @@ def duplicate_encode(word):
     word = word.lower()
     for _, v in enumerate(word):
         if word.count(v) > 1:
-            new_str += "".join(")")
+            new_str += ")"
         else:
-            new_str += "".join("(")
+            new_str += "("
     return new_str
