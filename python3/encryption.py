@@ -39,16 +39,6 @@ def decrypt(en_text, n):
 
 
 def encrypt(text, n):
-    c = 0
-    while c < n:
-        text = list(text)
-        dic = {"odd": "", "even": ""}
-        for i in range(1, len(text), 2):
-            dic["odd"] += text[i]
-            dic["even"] += text[i - 1]
-        c += 1
-        if len(text) % 2 == 0:
-            text = dic["odd"] + dic["even"]
-        else:
-            text = dic["odd"] + dic["even"] + text[-1]
+    for _ in range(n):
+        text = text[1::2] + text[::2]
     return text
